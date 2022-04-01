@@ -1,0 +1,22 @@
+version: '3.8'
+
+
+services:
+  mysql:
+    build: ./db/
+    container_name: bdd_projet
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
+  api:
+    build: .
+    container_name: api_projet
+    ports:
+      - 7500:80
+    environment:
+      - FLASK_APP=${FLASK_APP}
+      - DB_STRING=${DB_STRING}
+
