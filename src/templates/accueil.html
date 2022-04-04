@@ -95,8 +95,8 @@
                                 <img class="img-fluid" src="../static/images/assets/img/portfolio/1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Questionnaire</div>
-                                <div class="portfolio-caption-subheading text-muted">N°1</div>
+                                <div class="portfolio-caption-heading">Questionnaire N°1</div>
+                                <div class="portfolio-caption-subheading text-muted">Auto-évaluation</div>
                             </div>
                         </div>
                     </div>
@@ -110,8 +110,8 @@
                                 <img class="img-fluid" src="../static/images/assets/img/portfolio/2.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Questionnaire</div>
-                                <div class="portfolio-caption-subheading text-muted">N°2</div>
+                                <div class="portfolio-caption-heading">Questionnaire N°2</div>
+                                <div class="portfolio-caption-subheading text-muted">Vous et votre entreprise...</div>
                             </div>
                         </div>
                     </div>
@@ -125,8 +125,8 @@
                                 <img class="img-fluid" src="../static/images/assets/img/portfolio/3.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Questionnaire</div>
-                                <div class="portfolio-caption-subheading text-muted">N°3</div>
+                                <div class="portfolio-caption-heading">Questionnaire N°3</div>
+                                <div class="portfolio-caption-subheading text-muted">Estime de soi</div>
                             </div>
                         </div>
                     </div>
@@ -140,8 +140,8 @@
                                 <img class="img-fluid" src="../static/images/assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Questionnaire</div>
-                                <div class="portfolio-caption-subheading text-muted">N°4</div>
+                                <div class="portfolio-caption-heading">Questionnaire N°4</div>
+                                <div class="portfolio-caption-subheading text-muted">Pour aller plus loin...</div>
                             </div>
                         </div>
                     </div>
@@ -415,23 +415,162 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Questionnaire n°1</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/images/assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
+                                    <h1 class="text-uppercase">Questionnaire n°1</h1>
+                                    <p class="item-intro text-muted">Auto-évaluation</p>
+                                    <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
+                                    <h2>Savoir faire</h2>
+                                    <h4>Qualité du travail fourni :</h4>
+                                    <div>
+                                        <input name="question1" id="question1" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>        
+                                    <h4>Qualité du travail produit (productivité) :</h4>
+                                    <div>
+                                        <input name="question2" id="question2" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Savoir-être</h2>
+                                    <h4>Partage des informations :</h4>
+                                    <div>
+                                        <input name="question3" id="question3" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à travailler en groupe :</h4>
+                                    <div>
+                                        <input name="question4" id="question4" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à communiquer :</h4>
+                                    <div>
+                                        <input name="question5" id="question5" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à s’exprimer :</h4>
+                                    <div>
+                                        <input name="question6" id="question6" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à s’adapter :</h4>
+                                    <div>
+                                        <input name="question7" id="question7" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à s’organiser :</h4>
+                                    <div>
+                                        <input name="question8" id="question8" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à s’intégrer :</h4>
+                                    <div>
+                                        <input name="question9" id="question9" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Qualité des relations avec les autres services :</h4>
+                                    <div>
+                                        <input name="question10" id="question10" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Orientation client</h2>
+                                    <h4>A le souci permanent du client dans ses missions :</h4>
+                                    <div>
+                                        <input name="question11" id="question11" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Fiabilité</h2>
+                                    <h4>Respect des deadlines :</h4>
+                                    <div>
+                                        <input name="question12" id="question12" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Ponctualité (aux rendez-vous, aux réunions...) :</h4>
+                                    <div>
+                                        <input name="question13" id="question13" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Integrité :</h4>
+                                    <div>
+                                        <input name="question14" id="question14" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Engagement</h2>
+                                    <h4>Pugnacité à atteindre les objectifs attendus :</h4>
+                                    <div>
+                                        <input name="question15" id="question15" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Pertinence de prise de décision :</h4>
+                                    <div>
+                                        <input name="question16" id="question16" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Autonomie</h2>
+                                    <h4>Capacité à travailler de manière indépendante sans être constamment supervisé :</h4>
+                                    <div>
+                                        <input name="question17" id="question17" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité de prises d'initatives pour plus de performance :</h4>
+                                    <div>
+                                        <input name="question18" id="question18" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Recherche d'informagtions complémentaires en dehors du périmètre classique :</h4>
+                                    <div>
+                                        <input name="question19" id="question19" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à faire face à des imprévus :</h4>
+                                    <div>
+                                        <input name="question20" id="question20" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité de résolution de problèmes :</h4>
+                                    <div>
+                                        <input name="question21" id="question21" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Investissement</h2>
+                                    <h4>Agit dans l'intéret de l'entreprise :</h4>
+                                    <div>
+                                        <input name="question22" id="question22" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>S'inscrit dans la culture :</h4>
+                                    <div>
+                                        <input name="question23" id="question23" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Respect du règlement :</h4>
+                                    <div>
+                                        <input name="question24" id="question24" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h2>Qualités personnelles</h2>
+                                    <h4>Capacité à mobiliser :</h4>
+                                    <div>
+                                        <input name="question25" id="question25" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à convaincre :</h4>
+                                    <div class="bouton">
+                                        <input name="question26" id="question26" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité d'écoute :</h4>
+                                    <div>
+                                        <input name="question27" id="question27" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Capacité à communiquer :</h4>
+                                    <div>
+                                        <input name="question28" id="question28" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+
+
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Envoyer mes réponses 
                                     </button>
                                 </div>
                             </div>
@@ -450,23 +589,72 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Questionnaire n°2</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/images/assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
+                                    <h1 class="text-uppercase">Questionnaire n°2</h1>
+                                    <p class="item-intro text-muted">Vous et votre entreprise...</p>
+                                    <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
+                                    <h4>Avez vous l'impression que votre travail contribue à l'effort de l'entreprise ?</h4>
+                                    <div>
+                                        <input name="question1" id="question1" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>        
+                                    <h4>Vous sentez vous à votre place pendant l'exercice de vos fonctions ?</h4>
+                                    <div>
+                                        <input name="question2" id="question2" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Dans votre entreprise, avez vous le sentiment d'être écouté ?</h4>
+                                    <div>
+                                        <input name="question3" id="question3" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous bien intégré à votre équipe ?</h4>
+                                    <div>
+                                        <input name="question4" id="question4" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Votre travail est t-il régulièrement favorisé ?</h4>
+                                    <div>
+                                        <input name="question5" id="question5" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Etes vous fière de participer au fonctionnement de votre entreprise ?</h4>
+                                    <div>
+                                        <input name="question6" id="question6" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Comment jugez vous la qualité de vos relations avec vos supérieurs hiérarchiques ?</h4>
+                                    <div>
+                                        <input name="question7" id="question7" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Y'a t-il assez de moments dédiés aux échanges au sein de votre équipe de travail ?</h4>
+                                    <div>
+                                        <input name="question8" id="question8" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Que pensez vous de la qualité de l'encadrement de votre entreprise ?</h4>
+                                    <div>
+                                        <input name="question9" id="question9" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Pensez vous que la direction approuve la communication et les mises au point entre vous ?</h4>
+                                    <div>
+                                        <input name="question10" id="question10" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous motivé à aller travailler ?</h4>
+                                    <div>
+                                        <input name="question11" id="question11" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous heureux dans votre travail ?</h4>
+                                    <div>
+                                        <input name="question12" id="question12" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Envoyer mes réponses
                                     </button>
                                 </div>
                             </div>
@@ -485,23 +673,62 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Questionnaire n°3</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/images/assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
+                                    <h1 class="text-uppercase">Questionnaire n°3</h1>
+                                    <p class="item-intro text-muted">Parlons un peu de vous...</p>
+                                    <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
+                                    <h4>Je pense que je suis une personne de valeur, au moins égale à n'importe qui d'autre ?</h4>
+                                    <div>
+                                        <input name="question1" id="question1" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>        
+                                    <h4>Je pense que je possède un certain nombre de belles qualités ?</h4>
+                                    <div>
+                                        <input name="question2" id="question2" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Tout bien considéré, je suis porté à me considérer comme un raté ?</h4>
+                                    <div>
+                                        <input name="question3" id="question3" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Je suis capable de faire les choses aussi bien que la majorité des gens ?</h4>
+                                    <div>
+                                        <input name="question4" id="question4" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Je sens peu de raison d'être fière de moi ?</h4>
+                                    <div>
+                                        <input name="question5" id="question5" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>J'ai une attitude positive vis à vis de moi même ?</h4>
+                                    <div>
+                                        <input name="question6" id="question6" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Dans l'ensemble je suis satisfait de moi ?</h4>
+                                    <div>
+                                        <input name="question7" id="question7" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>J'aimerais avoir plus de respect pour moi même ?</h4>
+                                    <div>
+                                        <input name="question8" id="question8" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Parfois je me sens vraiment inutile ?</h4>
+                                    <div>
+                                        <input name="question9" id="question9" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Il m'arrive de penser que je suis bon à rien ?</h4>
+                                    <div>
+                                        <input name="question10" id="question10" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Envoyer mes réponses
                                     </button>
                                 </div>
                             </div>
@@ -520,23 +747,72 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Questionnaire n°4</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/images/assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
+                                    <h1 class="text-uppercase">Questionnaire n°4</h1>
+                                    <p class="item-intro text-muted">Pour aller plus loin...</p>
+                                    <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
+                                    <h4>Vous sentez vous régulièrement de bonne humeur ?</h4>
+                                    <div>
+                                        <input name="question1" id="question1" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>        
+                                    <h4>Vous sentez vous régulièrement calme et tranquille ?</h4>
+                                    <div>
+                                        <input name="question2" id="question2" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous plein d'énergie et vigoureux ?</h4>
+                                    <div>
+                                        <input name="question3" id="question3" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Votre vie quotidienne a été remplie de choses interessantes ?</h4>
+                                    <div>
+                                        <input name="question4" id="question4" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous impliqué dans votre travail ?</h4>
+                                    <div>
+                                        <input name="question5" id="question5" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Avez vous un sentiment d'appartenance à votre équipe de travail ?</h4>
+                                    <div>
+                                        <input name="question6" id="question6" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Pensez vous que les membres de votre équipe sont fondamentalement bons avec vous ?</h4>
+                                    <div>
+                                        <input name="question7" id="question7" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Aimez vous la plupart des facettes de votre personnalité ?</h4>
+                                    <div>
+                                        <input name="question8" id="question8" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vivez vous des expériences qui vous poussent à évoluer au sein de votre entreprise ?</h4>
+                                    <div>
+                                        <input name="question9" id="question9" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous capable de penser ou d'exprimer vos propres idées et opinions dans votre entreprise ?</h4>
+                                    <div>
+                                        <input name="question10" id="question10" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4> Ressentez vous de la tristesse au quotidien ?</h4>
+                                    <div>
+                                        <input name="question11" id="question11" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Vous sentez vous frustré ou en colère ?</h4>
+                                    <div>
+                                        <input name="question12" id="question12" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Envoyer mes réponses 
                                     </button>
                                 </div>
                             </div>

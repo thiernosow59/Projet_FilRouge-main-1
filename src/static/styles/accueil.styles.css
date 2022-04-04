@@ -11491,10 +11491,13 @@ header.masthead .masthead-heading {
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
+  line-height: 1.5cm;
+  word-spacing: 0.1cm;
+
 }
 .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
   font-size: 3rem;
-  line-height: 3rem;
+  line-height: 10rem;
 }
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
