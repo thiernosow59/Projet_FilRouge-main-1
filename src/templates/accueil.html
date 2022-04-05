@@ -155,8 +155,8 @@
                                 <img class="img-fluid" src="../static/images/assets/img/portfolio/5.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Questionnaire</div>
-                                <div class="portfolio-caption-subheading text-muted">N°5</div>
+                                <div class="portfolio-caption-heading">Questionnaire N°5</div>
+                                <div class="portfolio-caption-subheading text-muted">Vos conditions de travail</div>
                             </div>
                         </div>
                     </div>
@@ -167,11 +167,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="../static/images/assets/img/portfolio/6.jpg" alt="..." />
+                                <img class="img-fluid" src="../static/images/assets/img/portfolio/6.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Questionnaire</div>
-                                <div class="portfolio-caption-subheading text-muted">N°6</div>
+                                <div class="portfolio-caption-heading">Questionnaire N°6</div>
+                                <div class="portfolio-caption-subheading text-muted">Ici, vous pouvez déposer votre questionnaire</div>
                             </div>
                         </div>
                     </div>
@@ -832,22 +832,71 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Questionnaire n°5</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/images/assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
+                                    <p class="item-intro text-muted">Vos conditions de travail</p>
+                                    <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
+                                    <h4>Pensez vous que vous manquez de formation pour évoluer dans votre travail ?</h4>
+                                    <div>
+                                        <input name="question1" id="question1" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>        
+                                    <h4>Pensez vous subir une pression hiérarchique importante ?</h4>
+                                    <div>
+                                        <input name="question2" id="question2" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Subissez vous des comportements maltraitants de la hiérarchie directe ?</h4>
+                                    <div>
+                                        <input name="question3" id="question3" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Subissez vous des ordres contradictoires ?</h4>
+                                    <div>
+                                        <input name="question4" id="question4" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Pensez vous travailler dans des locaux salubres et adaptés à l'exercice de vos fonctions ?</h4>
+                                    <div>
+                                        <input name="question5" id="question5" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Avez vous l'impression d'avoir trop de travail ?</h4>
+                                    <div>
+                                        <input name="question6" id="question6" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Avez vous de l'aide de la part de vos collègues ?</h4>
+                                    <div>
+                                        <input name="question7" id="question7" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Subissez vous des pollutions sonores (téléphone, imprimante, PC, climatisation, travaux, ...) ?</h4>
+                                    <div>
+                                        <input name="question8" id="question8" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Etes vous souvent interrompu au cours des tâches à effectuer ?</h4>
+                                    <div>
+                                        <input name="question9" id="question9" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Subissez vous régulièrement des incidents qui viennent déranger votre travail ?</h4>
+                                    <div>
+                                        <input name="question10" id="question10" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Le personnel de votre entreprise est au nombre suffisant pour faire le travail ?</h4>
+                                    <div>
+                                        <input name="question11" id="question11" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
+                                    <h4>Avez vous le temps de vous reposer lorsque vous n'êtes pas au travail ?</h4>
+                                    <div>
+                                        <input name="question12" id="question12" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
+                                        <output id="rangevalue3">1</output>
+                                    </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Envoyer mes réponses
                                     </button>
                                 </div>
                             </div>
@@ -866,23 +915,15 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Questionnaire n°6</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../static/images/assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
+                                    <h1 class="text-uppercase">Je dépose mon questionnaire</h1>
+                                    <p class="item-intro text-muted">Ici, vous pouvez déposer votre propre questionnaire.</p>
+                                            <label for="fileInput">Ajouter un fichier</label>
+                                            <input id="fileInput" type="file" multiple>
+            
+                                        <script src=". .Ò/assets/js/file.js"></script>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
-                                        Close Project
+                                        Déposer mes questions
                                     </button>
                                 </div>
                             </div>
