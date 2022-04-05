@@ -9,3 +9,19 @@ L'utilisateur pourra ainsi s'enregistrer et répondre de manière anonyme aux di
 
 - docker >= 20.10.12
 - python >= 3.10.2
+
+## Kubernetes 
+
+brew install minikube (pour mac os) 
+
+minikube start 
+
+minikube tunnel (laisser le tunnel tourner)
+
+ouvrir un nouveau terminal 
+
+kubectl apply -f .
+
+minikube dashboard
+
+localhost:75000 (dans la barre de recherche)
