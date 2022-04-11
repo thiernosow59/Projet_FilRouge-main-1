@@ -4,19 +4,19 @@ body{
   justify-content:center;
   flex-direction: columns;
   align-items: center;
-  background-image: url(../images/scott-webb-tdFJrK5welI.jpg);
+  background-color: rgba(248, 248, 248, 0.176);
   font-family: 'Roboto', sans-serif;
-  color: #218d48;
+  color: #ffc800;
 }
 form {
   margin-top: 20px;
-  background-color: rgba(120, 120, 120, 0.201);
+  background-color: rgb(74, 74, 74);
   padding: 40px 60px;
   border-radius: 10px;
   min-width: 300px;
 }
 form h1{
-  color: #218d48;
+  color: #ffc800;
   text-align:center;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,7 +59,7 @@ form p.inscription{
   text-align: center;
 }
 form p.inscription span{
-  color: #218d48;
+  color: #ffc800;
   cursor: pointer;
 }
 form button{
@@ -68,7 +68,7 @@ form button{
   border:none;
   font-size: 15px;
   color: #fff;
-  background-color: #218d48;
+  background-color: #ffc800;
   outline:none;
   cursor:pointer;
 }
