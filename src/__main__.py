@@ -19,5 +19,5 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
 # démarrage du serveur
-if __name__ == "__main__":
-    app.run(host=HOST, port=PORT, debug=DEBUG)
+# if __name__ == "__main__":
+    # app.run(host=HOST, port=PORT, debug=DEBUG)

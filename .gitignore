@@ -1,0 +1,6 @@
+.git
+.venv
+keycloak/Dockerfile
+terraform.tfvars
+variables.tf
+.terraform*
