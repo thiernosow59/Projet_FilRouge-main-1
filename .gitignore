@@ -4,3 +4,4 @@ keycloak/Dockerfile
 terraform.tfvars
 variables.tf
 .terraform*
+.env
