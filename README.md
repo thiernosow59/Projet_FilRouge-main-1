@@ -25,3 +25,28 @@ kubectl apply -f .
 minikube dashboard
 
 localhost:75000 (dans la barre de recherche)
+
+## Terraform:
+
+Il y'a plusieurs manières d'utiliser terraform pour déployer une application dans le cloud, nous on a choisi docker.
+
+N.B: avant de commencer l'écriture du fichier terraform, préparer votre image docker et l'envoyer dans votre docker hub.
+
+Au début du fichier indique qu'on va utiliser terraform.
+
+Dire à terraform qu'on va utiliser le provider azurerm
+    (
+        dans ce provider, penser à utiliser vos id de souscriptions azure.
+    )
+
+Créer un ressource groupe
+
+Créer un app service plan
+
+Créer un app service
+    (       - a ce niveau dire au fichier qu'il va utiliser notre image docker
+                -- n'oubliez pas de mettre ":latest" devant votre image.
+            - lui indiquer l'url du docker hub hébergeant notre image.
+    )
+
+Faire un output pour récupérer l'url du site maintenant hébergé dans le cloud de azure.
