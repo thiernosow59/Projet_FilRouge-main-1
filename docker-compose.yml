@@ -8,11 +8,14 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=root
+    volumes:
+      - myapp:/app
   
   mongo-express:
     image: mongo-express
     depends_on: 
       - mongo
+    restart: always  
     ports:
       - 8081:8081
     environment:
@@ -27,5 +30,7 @@ services:
       - 9000:9000
     environment:
       - FLASK_APP=${FLASK_APP}
-      - DB_STRING=${DB_STRING}
+
+volumes:
+  myapp:
 
