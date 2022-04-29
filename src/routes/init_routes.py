@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, Blueprint  
-# from src.db import save_user
-from db import *
+from src.db import *
+# from db import *
 
 init_app_routes = Blueprint('init_routes', __name__)
 
@@ -8,9 +8,9 @@ init_app_routes = Blueprint('init_routes', __name__)
 @init_app_routes.route("/")
 @init_app_routes.route("/accueil")
 def accueil():
-    users = get_users()
-    for user in users: 
-      print(user)
+    # users = get_users()
+    # for user in users: 
+    #   print(user)
       # return "Bonjour"
     return render_template('accueil.html')
 
@@ -21,7 +21,7 @@ def index():
         username = request.form['username']
         password = request.form['password']
         save_user(username, password)
-        return redirect(url_for('init_routes.accueil'))
+        return redirect(url_for('init_routes.accueil'), msg=msg)
       return render_template('index.html')
 
 #   page d'inscription du site

@@ -3,13 +3,16 @@ version: '3'
 services:
   mongo:
     image: mongo
+    container_name: mongodb
     ports:
       - 27017:27017
+    networks:
+      - network-mongoapi  
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=root
-    volumes:
-      - myapp:/app
+      - MONGO_INITDB_ROOT_PASSWORD=root  
+    # volumes:
+    #   - myapp:/app
   
   mongo-express:
     image: mongo-express
@@ -17,7 +20,9 @@ services:
       - mongo
     restart: always  
     ports:
-      - 8081:8081
+      - 8081:8081  
+    networks:
+      - network-mongoapi  
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
       - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
@@ -28,9 +33,10 @@ services:
     container_name: api_projet
     ports:
       - 9000:9000
+    networks:
+      - network-mongoapi    
     environment:
       - FLASK_APP=${FLASK_APP}
 
-volumes:
-  myapp:
-
+networks:
+  network-mongoapi:
