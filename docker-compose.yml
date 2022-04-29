@@ -1,22 +1,42 @@
-version: '3.8'
-
+version: '3'
 
 services:
-  mysql:
-    build: ./db/
-    container_name: bdd_projet
+  mongo:
+    image: mongo
+    container_name: mongodb
     ports:
-      - 3307:3306
+      - 27017:27017
+    networks:
+      - network-mongoapi  
     environment:
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=root  
+    # volumes:
+    #   - myapp:/app
+  
+  mongo-express:
+    image: mongo-express
+    depends_on: 
+      - mongo
+    restart: always  
+    ports:
+      - 8081:8081  
+    networks:
+      - network-mongoapi  
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=root
 
   api:
     build: .
     container_name: api_projet
     ports:
-      - 7500:80
+      - 9000:9000
+    networks:
+      - network-mongoapi    
     environment:
       - FLASK_APP=${FLASK_APP}
-      - DB_STRING=${DB_STRING}
 
+networks:
+  network-mongoapi:

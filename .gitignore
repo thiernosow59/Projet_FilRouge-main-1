@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .git
 .venv
 keycloak/Dockerfile
@@ -5,3 +6,10 @@ terraform.tfvars
 variables.tf
 .terraform*
 .env
+=======
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+>>>>>>> 31e919827fa595ce93509931a95b16cf31b14f86

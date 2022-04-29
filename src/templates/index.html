@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
-  <form>
+  <form action="/index" method="post" autocomplete="off"> 
      
     <h1>Se connecter</h1>
     <div class="social-media">
@@ -19,12 +19,11 @@
     <p class="choose-email">Ou utiliser mon adresse e-mail :</p>
     
     <div class="inputs">
-      <form action="{{ url_for('index')}}" method="post" autocomplete="off"> 
-      <input type="email" id="email" placeholder="Email" />
-      <input type="password" id="password" placeholder="Mot de passe" autocomplete="on">
+      <input type="email" id="email" placeholder="Email" name="email"/>
+      <input type="password" id="password" placeholder="Mot de passe" autocomplete="on" name="password">
     </div>
     
-    <p class="inscription">Je n'ai pas de compte. <a class="worddark" href="{{url_for('inscription')}}"><span>Je m'en crée un</span></a></p>
+    <p class="inscription">Je n'ai pas de compte. <a class="worddark" href="{{url_for('init_routes.inscription')}}"><span>Je m'en crée un</span></a></p>
 
     <div align="center">
       <button type="submit">Se connecter</button>
